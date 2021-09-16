@@ -11,6 +11,13 @@ const Navbar = () => {
         if (window.innerWidth < 960 ) {
             setClick(!click)
             setOverlay(!overlay)
+            console.log(overlay)
+            
+            if (overlay === false){
+                document.body.classList.add('overflow-hidden')
+            }else {
+                document.body.classList.remove('overflow-hidden')
+            }
         }
     }
 
@@ -23,11 +30,7 @@ const Navbar = () => {
     }
 
     useEffect(() => {
-        if (window.innerWidth < 960){
-            setName("Ambrose")
-        }else{
-            setName("Ambrose Ahawo")
-        }
+        handleResize()
 
         window.addEventListener('resize', handleResize)
         
@@ -40,7 +43,7 @@ const Navbar = () => {
         <React.Fragment>
             <nav className="navbar">
                 <div className="menu-icon" onClick={handleClick}>
-                    <i className={click ? 'lnr lnr-cross' : 'lnr lnr-menu'} ></i>
+                    <i className={click ? 'lnr lnr-cross white' : 'lnr lnr-menu'} ></i>
                 </div>
                 <div className="nav-center">
                     <div className="nav-header">
@@ -69,8 +72,8 @@ const Navbar = () => {
                         })}
                     </ul>
                 </div>
+                <div id="overlay" className={overlay ? 'display-overlay': 'display-none'} onClick={handleClick}></div>
             </nav>
-            <div id="overlay" className={overlay ? 'display-overlay': 'display-none'} onClick={handleClick}></div>
         </React.Fragment>
     )
 }
