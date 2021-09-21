@@ -1,79 +1,82 @@
+import { FcSmartphoneTablet } from "react-icons/fc"
+import { BiCodeCurly } from "react-icons/bi"
+import { GiExtraTime } from "react-icons/gi"
 import { AiOutlineApi } from "react-icons/ai"
 
 export const ServicesData = [
     {
         "id": 1,
-        "serviceIcon": <AiOutlineApi className="services_icon"/>,
-        "serviceTitle": "Api Development",
+        "serviceIcon": <FcSmartphoneTablet className="services_icon"/>,
+        "serviceTitle": "Frontend Development",
         "servicesSet": [
             {
                 "id": 11,
-                "modalItem": "Develop user interface"
+                "modalItem": "Develop responsive user interface"
             },
             {
                 "id": 12,
-                "modalItem": "Develop user interface"
+                "modalItem": "Enhance user experience"
             },
             {
                 "id": 13,
-                "modalItem": "Develop user interface"
+                "modalItem": "Maintain brand consistency"
             },
         ]
     },
     {
         "id": 2,
         "serviceIcon": <AiOutlineApi className="services_icon"/>,
-        "serviceTitle": "Api Development",
+        "serviceTitle": "RESTful APIs",
         "servicesSet": [
             {
                 "id": 11,
-                "modalItem": "Develop user interface"
+                "modalItem": "Design RESTful APIs"
             },
             {
                 "id": 12,
-                "modalItem": "Develop user interface"
+                "modalItem": "Develop RESTful APIs"
             },
             {
                 "id": 13,
-                "modalItem": "Develop user interface"
+                "modalItem": "Implement, oversee, adapt APIs"
             },
         ]
     },
     {
         "id": 3,
-        "serviceIcon": <AiOutlineApi className="services_icon"/>,
-        "serviceTitle": "Api Development",
+        "serviceIcon": <BiCodeCurly className="services_icon"/>,
+        "serviceTitle": "Backend Development",
         "servicesSet": [
             {
                 "id": 11,
-                "modalItem": "Develop user interface"
+                "modalItem": "Define and maintain central database"
             },
             {
                 "id": 12,
-                "modalItem": "Develop user interface"
+                "modalItem": "Develop server-side logic"
             },
             {
                 "id": 13,
-                "modalItem": "Develop user interface"
+                "modalItem": "Ensure scalability"
             },
         ]
     },
     {
         "id": 4,
-        "serviceIcon": <AiOutlineApi className="services_icon"/>,
-        "serviceTitle": "Api Development",
+        "serviceIcon": <GiExtraTime className="services_icon"/>,
+        "serviceTitle": "Web Scraping",
         "servicesSet": [
             {
                 "id": 11,
-                "modalItem": "Develop user interface"
+                "modalItem": "Extract data from websites"
             },
             {
                 "id": 12,
-                "modalItem": "Develop user interface"
+                "modalItem": "Data cleaning"
             },
             {
                 "id": 13,
-                "modalItem": "Develop user interface"
+                "modalItem": "Data storage"
             },
         ]
     },

@@ -18,11 +18,11 @@ export const links = [
     url: '#qualification',
     text: 'qualification',
   },
-  {
-    id: 4,
-    url: '#portfolio',
-    text: 'portfolio',
-  },
+  // {
+  //   id: 4,
+  //   url: '#portfolio',
+  //   text: 'portfolio',
+  // },
   {
     id: 5,
     url: '#contact',
