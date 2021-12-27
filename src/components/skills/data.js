@@ -42,19 +42,29 @@ export const backendSkills = [
         "skillsYears": 1,
         "skillsSet": [
             {
+                "id": 222,
+                "skillName": "Python",
+                "skillPercentage": 88,
+            },
+            {
+                "id": 202,
+                "skillName": "Django",
+                "skillPercentage": 82,
+            },
+            {
+                "id": 333,
+                "skillName": "SQL",
+                "skillPercentage": 78,
+            },
+            {
                 "id": 111,
                 "skillName": "Nodejs",
                 "skillPercentage": 75,
             },
             {
-                "id": 222,
-                "skillName": "Python",
-                "skillPercentage": 82,
-            },
-            {
-                "id": 333,
-                "skillName": "SQL(Postgresql)",
-                "skillPercentage": 70,
+                "id": 101,
+                "skillName": "Express",
+                "skillPercentage": 75,
             },
             {
                 "id": 444,

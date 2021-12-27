@@ -10,6 +10,17 @@ const Contact = () => {
     const [project, setProject] = useState('')
     const [message, setMessage] = useState('')
 
+    // const handleSubmit = (e) => {
+    //     e.preventDefault()
+        
+    //     // console.log(`{name: ${name}, email: ${email}, project: ${project}, message: ${message}}`)
+        
+    //     setName('')
+    //     setEmail('')
+    //     setProject('')
+    //     setMessage('')
+    // }
+
     return (
         <section className="contact section" id="contact">
             <h2 className="section_title">Contact Me</h2>
