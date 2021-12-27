@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BiPhoneCall } from 'react-icons/bi'
 import { AiOutlineMail } from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
 import { BiSend } from 'react-icons/bi'
 
 const Contact = () => {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [project, setProject] = useState('')
+    const [message, setMessage] = useState('')
+
     return (
         <section className="contact section" id="contact">
             <h2 className="section_title">Contact Me</h2>
@@ -42,26 +47,34 @@ const Contact = () => {
                     <div className="contact_inputs grid">
                         <div className="contact_content">
                             <label htmlFor="" className="contact_label">Name</label>
-                            <input required type="text" className="contact_input" />
+                            <input required type="text" className="contact_input"
+                                    value={name} onChange={(e) => setName(e.target.value)} />
                         </div>
+                            {/* <span>*value needed</span> */}
                         <div className="contact_content">
                             <label htmlFor="" className="contact_label">Email</label>
-                            <input required type="email" className="contact_input" />
+                            <input required type="email" className="contact_input"
+                                    value={email} onChange={(e) => setEmail(e.target.value)} />
                         </div>
+                            {/* <span>*value needed</span> */}
                     </div>
                     <div className="contact_content">
                         <label htmlFor="" className="contact_label">Project</label>
-                        <input required type="text" className="contact_input" />
+                        <input required type="text" className="contact_input"
+                                value={project} onChange={(e) => setProject(e.target.value)} />
                     </div>
+                        {/* <span>*value needed</span> */}
                     <div className="contact_content">
                         <label htmlFor="" className="contact_label">Message</label>
-                        <textarea required name="" id="" cols="0" rows="7" className="contact_input"></textarea>
+                        <textarea required name="" id="" cols="0" rows="7" className="contact_input"
+                                    value={message} onChange={(e) => setMessage(e.target.value)} />
                     </div>
+                        {/* <span>*value needed</span> */}
                     <div>
-                        <a href="#contact" type="submit" className="button button--flex">
+                        <button type="submit" className="button button--flex">
                             Send Message
                             <BiSend className="button_icon"/>
-                        </a>
+                        </button>
                     </div>
                 </form>
             </div>
