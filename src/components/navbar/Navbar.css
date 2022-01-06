@@ -123,6 +123,10 @@ nav {
     line-height: normal;
 }
 
+.github-logo a {
+    color: black
+}
+
 .youtube-logo a{
     color: var(--clr-red-dark);
     font-size: 1.2rem;

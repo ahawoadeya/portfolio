@@ -4,22 +4,30 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
 import { BiSend } from 'react-icons/bi'
 
+import emailjs from 'emailjs-com'
+
 const Contact = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [project, setProject] = useState('')
     const [message, setMessage] = useState('')
 
-    // const handleSubmit = (e) => {
-    //     e.preventDefault()
+    const handleSubmit = (e) => {
+        e.preventDefault()
         
-    //     // console.log(`{name: ${name}, email: ${email}, project: ${project}, message: ${message}}`)
+        // console.log(`{name: ${name}, email: ${email}, project: ${project}, message: ${message}}`)
+
+        emailjs.sendForm("service_k0j319g", "template_d8mtdwq", 
+                            e.target, "user_K1wTYowLAry1bkz90fgpT")
+                            // .then(res =>{
+                            //     console.log(res)
+                            // }).catch(err => console.log(err))
         
-    //     setName('')
-    //     setEmail('')
-    //     setProject('')
-    //     setMessage('')
-    // }
+        setName('')
+        setEmail('')
+        setProject('')
+        setMessage('')
+    }
 
     return (
         <section className="contact section" id="contact">
@@ -54,30 +62,30 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <form action="" className="contact_form grid">
+                <form action="" className="contact_form grid" onSubmit={handleSubmit}>
                     <div className="contact_inputs grid">
                         <div className="contact_content">
                             <label htmlFor="" className="contact_label">Name</label>
-                            <input required type="text" className="contact_input"
+                            <input required type="text" className="contact_input" name="name"
                                     value={name} onChange={(e) => setName(e.target.value)} />
                         </div>
                             {/* <span>*value needed</span> */}
                         <div className="contact_content">
                             <label htmlFor="" className="contact_label">Email</label>
-                            <input required type="email" className="contact_input"
+                            <input required type="email" className="contact_input" name="email"
                                     value={email} onChange={(e) => setEmail(e.target.value)} />
                         </div>
                             {/* <span>*value needed</span> */}
                     </div>
                     <div className="contact_content">
                         <label htmlFor="" className="contact_label">Project</label>
-                        <input required type="text" className="contact_input"
+                        <input required type="text" className="contact_input" name="project"
                                 value={project} onChange={(e) => setProject(e.target.value)} />
                     </div>
                         {/* <span>*value needed</span> */}
                     <div className="contact_content">
                         <label htmlFor="" className="contact_label">Message</label>
-                        <textarea required name="" id="" cols="0" rows="7" className="contact_input"
+                        <textarea required name="message" id="" cols="0" rows="7" className="contact_input"
                                     value={message} onChange={(e) => setMessage(e.target.value)} />
                     </div>
                         {/* <span>*value needed</span> */}

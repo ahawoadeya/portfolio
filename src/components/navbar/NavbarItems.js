@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter, FaGithub, FaYoutube } from 'react-icons/fa';
 import { SiUpwork } from 'react-icons/si'
 
 export const links = [
@@ -46,9 +46,9 @@ export const social = [
   },
   {
     id: 3,
-    url: 'https://www.instagram.com/ambroseahawo/',
-    icon: <FaInstagram />,
-    cName: "instagram-logo"
+    url: 'https://github.com/ambroseahawo?tab=repositories',
+    icon: <FaGithub />,
+    cName: "github-logo"
   },
   {
     id: 4,
