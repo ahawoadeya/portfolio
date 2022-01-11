@@ -41,8 +41,12 @@ const Banner = () => {
 
                         <div className="home_data">
                             <h1 className="home_title">Hi, I'm Ambrose</h1>
-                            <h3 className="home_subtitle">FullStack developer</h3>
-                            <p className="home_description">Are you looking for a Great Website, Online Store, or Custom Web Solution? I'm Ambrose, a freelance web developer with vast experience in react-javascript. Currently, with two years of experience both in front-end and back-end development, through which I have perfected excellent skills in ReactJS, NodeJS, Python, Django, MongoDB, etc.</p>
+                            <h3 className="home_subtitle">Python - Django Backend Developer</h3>
+                            <p className="home_description">
+                                Are you looking for a Great Website functionality, Online Store, or Custom Web Solution?
+                                I'm a freelance full stack developer with experience in backend development.
+                                Specifically, implementing rest api architecture with django-rest-framework.
+                            </p>
                             <a href="#contact" className="button button--flex">
                                 Contact Me <BiSend className="button_icon"/>
                             </a>

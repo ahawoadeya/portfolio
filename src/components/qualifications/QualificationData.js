@@ -46,13 +46,21 @@ export const QualificationTwo = () => {
         <React.Fragment>
             <div className="qualification_data">
                 <div>
+                    <h3 className="qualification_title">Python-Django Backend Developer</h3>
+                    <span className="qualification_subtitle">Upwork - Freelance</span>
+                    <div className="qualification_calendar">
+                        <FiCalendar/>
+                        2020 - Present
+                    </div>
+                </div>
+                {/* <div>
                     <h3 className="qualification_title">Frontend Developer</h3>
                     <span className="qualification_subtitle">Libro Systems - Intern</span>
                     <div className="qualification_calendar">
                         <FiCalendar/>
                         2020 - 2021
                     </div>
-                </div>
+                </div> */}
 
                 <div>
                     <span className="qualification_rounder"></span>
@@ -69,11 +77,11 @@ export const QualificationTwo = () => {
                 </div>
 
                 <div>
-                    <h3 className="qualification_title">Fullstack Developer</h3>
-                    <span className="qualification_subtitle">Upwork - Freelance</span>
+                    <h3 className="qualification_title">Software Support</h3>
+                    <span className="qualification_subtitle">Libro Systems - Intern</span>
                     <div className="qualification_calendar">
                         <FiCalendar/>
-                        2020 - Present
+                        2020 - 2020
                     </div>
                 </div>
             </div>
@@ -84,7 +92,7 @@ export const QualificationTwo = () => {
                     <span className="qualification_subtitle">Upwork - Freelance</span>
                     <div className="qualification_calendar">
                         <FiCalendar/>
-                        2020 - Present
+                        2020 - 2021
                     </div>
                 </div>
                 <div>
