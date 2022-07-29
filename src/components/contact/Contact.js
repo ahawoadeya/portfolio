@@ -4,7 +4,9 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
 import { BiSend } from 'react-icons/bi'
 
-import emailjs from 'emailjs-com'
+import emailjs from "@emailjs/browser"
+
+// https://npm.io/package/@emailjs/browser
 
 const Contact = () => {
     const [name, setName] = useState('')
