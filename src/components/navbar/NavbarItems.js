@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaTwitter, FaGithub, FaYoutube } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa';
 import { SiUpwork } from 'react-icons/si'
 
 export const links = [
@@ -8,11 +8,11 @@ export const links = [
     url: '#about',
     text: 'about',
   },
-  {
-    id: 2,
-    url: '#skills',
-    text: 'skills',
-  },
+  // {
+  //   id: 2,
+  //   url: '#skills',
+  //   text: 'skills',
+  // },
   {
     id: 3,
     url: '#qualification',
@@ -38,12 +38,12 @@ export const social = [
     icon: <FaLinkedin />,
     cName: "linkedin-logo"
   },
-  {
-    id: 2,
-    url: 'https://twitter.com/ambroseahawo',
-    icon: <FaTwitter />,
-    cName: "twitter-logo"
-  },
+  // {
+  //   id: 2,
+  //   url: 'https://twitter.com/ambroseahawo',
+  //   icon: <FaTwitter />,
+  //   cName: "twitter-logo"
+  // },
   {
     id: 3,
     url: 'https://github.com/ambroseahawo?tab=repositories',
