@@ -41,10 +41,10 @@ const Banner = () => {
 
                         <div className="home_data">
                             <h1 className="home_title">Hi, I'm Ambrose</h1>
-                            <h3 className="home_subtitle">Python - Django Backend Developer</h3>
+                            <h3 className="home_subtitle">Python/Django React | MERN Stack Developer | AWS</h3>
                             <p className="home_description">
                                 Are you looking for a Great Website functionality, Online Store, or Custom Web Solution?
-                                I'm a freelance full stack developer with experience in backend development.
+                                I'm a freelance full stack developer with experience in fullstack development.
                                 Specifically, implementing rest api architecture with django-rest-framework.
                             </p>
                             <a href="#contact" className="button button--flex">
