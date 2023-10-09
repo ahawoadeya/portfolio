@@ -1,6 +1,6 @@
 import React from 'react'
 import { IoDownloadOutline } from 'react-icons/io5'
-import CVFile from '../../assets/pdf/CV.pdf'
+import CVFile from '../../assets/pdf/AmbroseAhawoResume.pdf'
 import AboutImg from '../../assets/images/PROFILE.jpg'
 
 const About = () => {
@@ -21,7 +21,7 @@ const About = () => {
                         
                     <div className="about_info">
                         <div>
-                            <span className="about_info-title">02+</span>
+                            <span className="about_info-title">03+</span>
                             <span className="about_info-name">Years <br /> experience</span>
                         </div>
                         <div>
